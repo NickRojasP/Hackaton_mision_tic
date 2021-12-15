@@ -1,3 +1,4 @@
+var msg='Error dato vacio';
 const regex = {
 	user: /^[a-zA-Z0-9]{4,30}$/,
 	mail: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
@@ -7,6 +8,7 @@ const regex = {
 function checkUsername(valor){    
     if (valor == "") {
       return false;
+      alert(msg);
       }
       else {
         return regex.user.test(valor);
@@ -16,6 +18,7 @@ function checkUsername(valor){
 function checkCorreo(valor){  
     if (valor == "") {
       return false;
+      alert(msg);
       }
       else {
         return regex.mail.test(valor);
@@ -25,6 +28,7 @@ function checkCorreo(valor){
 function checkContrasena(valor){
       if (valor == "") {
       return false;
+      alert(msg);
       }
       else {
         return regex.pass.test(valor);
@@ -34,9 +38,11 @@ function checkContrasena(valor){
 function checkConfirmContrasena (valor1, valor2){
     if (valor2 == "") {
       return false;
+      alert(msg);
       }
       else if(valor2 !== valor1) {
         return false; 
+        alert(msg);
       }
       else {
         return regex.pass.test(valor2);
