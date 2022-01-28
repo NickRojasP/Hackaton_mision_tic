@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+#nav_drawer{
+    width: 10%;
+    height: 400px;
+    background-color: gray;
+    float: right; 
+    
+}
+#logo_navbar{
+    width: 10%;
+    float:  right;
+    
+}
